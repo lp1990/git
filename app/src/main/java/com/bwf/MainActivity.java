@@ -33,24 +33,5 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
 
-        OkHttpUtils.post()
-                    .url(string)
-                    .build()
-                    .execute(new Callback() {
-                        @Override
-                        public Object parseNetworkResponse(Response response, int id) throws Exception {
-                            return null;
-                        }
-
-                        @Override
-                        public void onError(Call call, Exception e, int id) {
-
-                        }
-
-                        @Override
-                        public void onResponse(Object response, int id) {
-
-                        }
-                    });
     }
 }
